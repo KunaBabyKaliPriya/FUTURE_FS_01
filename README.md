@@ -78,7 +78,7 @@ cd FUTURE_FS_01
 1. Push code to a GitHub repository
 2. Go to **Settings → Pages**
 3. Set Source to `main` branch → `/ (root)` → Save
-4. Live at ``
+4. Live at `https://github.com/KunaBabyKaliPriya/FUTURE_FS_01.git`
 
 ---
 
