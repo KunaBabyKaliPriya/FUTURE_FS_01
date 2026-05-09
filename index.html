@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuna Baby Kali Priya | CSE Student & Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION BAR
+       Fixed at top. JS adds 'scrolled' class for
+       border-bottom on scroll. Active link updates
+       as user scrolls through sections.
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">SGP</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO / HOME SECTION
+       First impression. Name + role + CTA buttons.
+       Social links point to your real profiles.
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Baby Kali Priya<br /><em>Kuna</em></h1>
+      <p class="hero-tagline">
+        B.Tech CSE Student @ Amrita School of Engineering College &amp; Full Stack Intern at
+        <span class="highlight">Future Interns</span>
+      </p>
+      <p class="hero-description">
+        I build clean, user-friendly web applications using HTML, CSS &amp; JavaScript.
+        Passionate about turning ideas into real-world solutions through full stack development.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/KunaBabyKaliPriya" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sanjana-gayathri-puvvala-0827b832a" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:babykalipriya@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="ring"></div>
+  <img src="profile.jpg" alt="Kuna Baby Kali Priya" class="profile-img">
+</div>
+      <div class="status-badge">
+        <span class="status-dot"></span> Available for opportunities
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+       Your real story, college, internship, hobbies.
+       Two-column: text left, stat cards right.
+  ═══════════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About Me</div>
+      <h2 class="section-title">Background &amp; Goals</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a passionate B.Tech student specializing in <strong>Computer Science and Engineering
+            </strong> at Amrita School of Engineering College, Coimbatore. I enjoy building
+            web applications and turning ideas into real-world solutions.
+          </p>
+          <p>
+            Currently, I am exploring full stack development and continuously improving my
+            skills through hands-on projects. I'm also interning at <strong>Future Interns</strong>
+            as a Full Stack Development Intern, where I apply what I learn to real tasks —
+            including this very portfolio!
+          </p>
+          <p>
+            Outside of coding, I enjoy <strong>Web Design</strong>, learning new technologies,
+            solving challenging problems, and listening to music. I believe every project is
+            a chance to grow a little more.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Tech CSE — Amrita School of Engineering College (2nd Year)</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Coimbatore, Tamilnadu, India</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Full Stack Development Intern @ Future Interns</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-heart"></i>
+              <span>Coding · Web Design · Problem Solving · Music</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Project Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Active Internship</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+       Your real skills and percentages.
+       data-skill = label, data-level = bar width %.
+       Bars animate when this section scrolls into view.
+  ═══════════════════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3>Core Skills</h3>
+          <div class="skill-bar" data-skill="HTML5" data-level="85"></div>
+          <div class="skill-bar" data-skill="CSS3" data-level="80"></div>
+          <div class="skill-bar" data-skill="JavaScript" data-level="70"></div>
+          <div class="skill-bar" data-skill="Problem Solving" data-level="75"></div>
+          <div class="skill-bar" data-skill="Git &amp; GitHub" data-level="60"></div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools &amp; Practices</h3>
+          <div class="skill-bar" data-skill="Responsive Web Design" data-level="78"></div>
+          <div class="skill-bar" data-skill="Web Design Principles" data-level="75"></div>
+          <div class="skill-bar" data-skill="VS Code" data-level="85"></div>
+          <div class="skill-bar" data-skill="Chrome DevTools" data-level="70"></div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Currently Learning</h3>
+          <div class="learning-chips">
+            <span class="chip">React.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Full Stack Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+       Real project 1: Daily Nest
+       Real project 2: This portfolio (Internship Task 1)
+       Project 3: Coming Soon placeholder
+  ═══════════════════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: Daily Nest -->
+        <article class="project-card featured">
+          <div class="project-tag">Main Project</div>
+          <h3 class="project-title">Daily Nest</h3>
+          <p class="project-desc">
+            A DBMS mini project designed to simulate an e-commerce-style product browsing
+            website. Features categorized product sections, responsive layouts, and an
+            interactive user interface that enhances the online shopping experience using
+            front-end technologies.
+          </p>
+          <div class="project-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KunaBabyKaliPriya" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: This Portfolio -->
+        <article class="project-card">
+          <div class="project-tag">Internship Task 1 — Future Interns</div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            A fully responsive personal portfolio built from scratch using HTML, CSS, and
+            JavaScript — no frameworks. Features scroll-triggered animations, animated skill
+            bars, mobile navigation, and a contact form with validation.
+          </p>
+          <div class="project-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span>
+          </div>
+          <div class="project-links">
+           <a href="https://github.com/puvvalasanjanagayathri-eng/FUTURE_FS_01" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a href="https://priya07-portfolio.netlify.app" class="project-link" target="_blank">
+  <i class="fas fa-external-link-alt"></i> Live Demo
+</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Coming Soon -->
+        <article class="project-card coming-soon">
+          <div class="project-tag">Coming Soon</div>
+          <h3 class="project-title">Next Project</h3>
+          <p class="project-desc">
+            Currently exploring new ideas as part of my Full Stack internship and
+            B.Tech coursework. My next project will feature React.js and a backend.
+            Stay tuned!
+          </p>
+          <div class="project-stack">
+            <span>React.js</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KunaBabyKaliPriya" class="project-link" target="_blank">
+              <i class="fab fa-github"></i> Follow on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       All your real contact details.
+       Form has client-side validation + feedback.
+  ═══════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">04 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-intro">
+        Whether you have an opportunity, a project idea, or just want to say hello —
+        my inbox is always open.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:babykalipriya@gmail.com">
+                babykalipriya@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/kuna-baby-kali-priya-33b074341" target="_blank">
+                linkedin.com/in/kuna-baby-kali-priya
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/KunaBabyKaliPriya" target="_blank">
+                github.com/KunaBabyKaliPriya
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span>Coimbatore, Tamilnadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <strong>Kuna Baby Kali Priya</strong></p>
+      <p class="footer-sub">B.Tech CSE · Amrita School of Engineering College · Full Stack Developer Intern @Future Interns · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
